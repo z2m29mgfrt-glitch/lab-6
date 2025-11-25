@@ -1,39 +1,237 @@
+ <!-- Верхнее меню  -->
 <html>
 <head>
-    <title>Фильмы</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-          crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet"/>
+ <title>Лабораторная работа 7</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#sidebar" data-bs-offset="100" tabindex="0">
 
-<!-- Верхнее меню -->
- <nav class="navbar navbar-expand-lg position-fixed top-0 start-0 w-100" style="z-index: 1030;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="info.html">Информация</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="films.html">Фильмы</a>
-        </li>
-      </ul>
+  <!-- Верхнее меню -->
+  <nav class="navbar navbar-expand-lg position-fixed top-0 start-0 w-100" style="z-index: 1030;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="info.html">Информация</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="films.html">Фильмы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Блок с информацией об актёре -->
+  <div class="container mt-5 actor-info">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="info-card">
+          <h2 class="actor-name">Хью Джон Мунго Грант</h2>
+          <ul class="actor-details">
+            <li><strong>Дата рождения:</strong> 9 сентября 1960 года</li>
+            <li><strong>Возраст:</strong> 64 года</li>
+            <li><strong>Количество фильмов:</strong> 219</li>
+            <li><strong>Жанры:</strong> боевик, детектив, драма, комедия, мелодрама, триллер, фэнтези, фантастика, криминал</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 text-center">
+        <div class="photo-container">
+          <img src="img/фото 1.svg" alt="Хью Грант" class="actor-photo">
+        </div>
+      </div>
     </div>
   </div>
-</nav>s
-    
 
-<div class="container mt-3">
-
-    <!-- Предупреждение о разработке -->
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Внимание!</strong> Эта страница находится в разработке.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть"></button>
+  <!-- Раздел «Лучшие фильмы» -->
+  <div class="container mt-5">
+    <h3 class="section-title mb-4">Лучшие фильмы</h3>
+    <div class="row movie-row">
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="movie-card card shadow-sm">
+          <img src="img/постер1.jpg" class="card-img-top" alt="Постер фильма 1">
+          <div class="card-body">
+            <h5 class="movie-title card-title">Морис (1987)</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="movie-card card shadow-sm">
+          <img src="img/постер2.jpg" class="card-img-top" alt="Постер фильма 2">
+          <div class="card-body">
+            <h5 class="movie-title card-title">Четыре свадьбы и одни похороны (1994)</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="movie-card card shadow-sm">
+          <img src="img/постер3.jpg" class="card-img-top" alt="Постер фильма 3">
+          <div class="card-body">
+            <h5 class="movie-title card-title">Разум и чувства (1995)</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="movie-card card shadow-sm">
+          <img src="img/постер4.jpg" class="card-img-top" alt="Постер фильма 4">
+          <div class="card-body">
+            <h5 class="movie-title card-title">Ужасно большое приключение (1995)</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="movie-card card shadow-sm">
+          <img src="img/постер5.jpg" class="card-img-top" alt="Постер фильма 5">
+          <div class="card-body">
+            <h5 class="movie-title card-title">Ноттинг Хилл (1999)</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="movie-card card shadow-sm">
+          <img src="img/постер6.jpg" class="card-img-top" alt="Постер фильма 6">
+          <div class="card-body">
+            <h5 class="movie-title card-title">Дневник Бриджит Джонс (2001)</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="movie-card card shadow-sm">
+          <img src="img/постер7.jpg" class="card-img-top" alt="Постер фильма 7">
+          <div class="card-body">
+            <h5 class="movie-title card-title">Реальная любовь (2003)</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 mb-4">
+        <div class="movie-card card shadow-sm">
+          <img src="img/постер8.jpg" class="card-img-top" alt="Постер фильма 8">
+          <div class="card-body">
+            <h5 class="movie-title card-title">Еретик (2024)</h5>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+
+  <!-- Раздел «Интересные факты» -->
+  <div class="container mt-5">
+    <h3 class="section-title mb-4">Интересные факты о Хью Гранте</h3>
+    <div class="row g-4">
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-warning">Хобби</h5>
+            <p class="card-text">Хью любит читать классику и коллекционирует редкие издания книг XIX века.</p>
+            <img src="img/факт 1.jpg" class="img-fluid d-none d-md-inline-block mt-3" alt="факт1">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-success">Любимое блюдо</h5>
+            <p class="card-text">Хью Грант признаётся, что его любимое блюдо — классический английский завтрак: бекон, яйца, грибы, помидоры и тосты с маслом.</p>
+            <img src="img/факт 2.jpg" class="img-fluid d-none d-md-inline-block mt-3" alt="факт2">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-info">Интересный факт</h5>
+            <p class="card-text">В юности Хью Грант изучал английский язык в Оксфордском университете и даже планировал стать преподавателем, но судьба привела его в кино.</p>
+            <img src="img/факт 3.jpg" class="img-fluid d-none d-md-inline-block mt-3" alt="факт3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Раздел «Фильмография» -->
+  <div class="container mt-5">
+    <h3 class="section-title mb-4">Фильмография</h3>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Год</th>
+            <th scope="col">Русское название</th>
+            <th scope="col">Оригинальное название</th>
+            <th scope="col">Роль</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1987</td>
+            <td>Морис</td>
+            <td>Maurice</td>
+            <td>Клайв Дархем</td>
+          </tr>
+          <tr>
+            <td>1994</td>
+            <td>Четыре свадьбы и одни похороны</td>
+            <td>Four Weddings and a Funeral</td>
+            <td>Чарльз</td>
+          </tr>
+          <tr>
+            <td>1995</td>
+            <td>Разум и чувства</td>
+            <td>Sense and Sensibility</td>
+            <td>Эдвард Феррарс</td>
+          </tr>
+          <tr>
+            <td>1999</td>
+            <td>Ноттинг Хилл</td>
+            <td>Notting Hill</td>
+            <td>Уильям Такер</td>
+          </tr>
+          <tr>
+            <td>2001</td>
+            <td>Дневник Бриджит Джонс</td>
+            <td>Bridget Jones’s Diary</td>
+            <td>Дэниел Кливер</td>
+          </tr>
+          <tr>
+            <td>2003</td>
+            <td>Реальная любовь</td>
+            <td>Love Actually</td>
+            <td>Премьер‑министр</td>
+          </tr>
+          <tr>
+            <td>2016</td>
+            <td>Бриджит Джонс 3</td>
+            <td>Bridget Jones’s Baby</td>
+            <td>Дэниел Кливер</td>
+          </tr>
+          <tr>
+            <td>2017</td>
+            <td>Приключения Паддингтона 2</td>
+            <td>Paddington 2</td>
+            <td>Феникс Бьюкенен</td>
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>Джентльмены</td>
+            <td>The Gentlemen</td>
+            <td>Флетчер</td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>Еретик</td>
+            <td>Heretic</td>
+            <td>Мистер Рид</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
